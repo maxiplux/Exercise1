@@ -1,6 +1,8 @@
 package customers;
 
+import org.springframework.stereotype.Service;
 
+@Service
 public class CustomerService implements ICustomerService {
 
 	private ICustomerDAO customerDAO ;
