@@ -1,19 +1,20 @@
 package customers;
 
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
 public class CustomerService implements ICustomerService {
-	ICustomerDAO customerDAO ;
-	IEmailSender emailSender ;
+	@Autowired
+	private ICustomerDAO customerDAO ;
+
+	@Autowired
+	private IEmailSender emailSender ;
 
 
-	@Override
-	public void setCustomerDAO(ICustomerDAO customerDAO) {
-		this.customerDAO = customerDAO;
-	}
 
-	@Override
-	public void setEmailSender(IEmailSender emailSender) {
-		this.emailSender = emailSender;
-	}
+
 
 	public void addCustomer(String name, String email, String street,
 							String city, String zip) {
