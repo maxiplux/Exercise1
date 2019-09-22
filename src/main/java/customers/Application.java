@@ -22,8 +22,7 @@ public class Application {
 		*/
 
 
-		ICustomerService customerService = context.getBean("customerService",
-				ICustomerService.class);
+        ICustomerService customerService = context.getBean(ICustomerService.class);
 
 
 
