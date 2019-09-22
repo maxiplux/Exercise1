@@ -1,7 +1,7 @@
 package customers;
 
 public class CustomerDAO implements ICustomerDAO{
-	private ILogger logger = new Logger();
+	private ILogger logger ;
 
 
 	@Override
