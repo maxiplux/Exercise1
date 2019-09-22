@@ -1,6 +1,8 @@
 package customers;
 
 public interface ICustomerService {
+
+
 	void setCustomerDAO(ICustomerDAO customerDAO);
 
 	void setEmailSender(IEmailSender emailSender);

@@ -1,8 +1,12 @@
 package customers;
 
+
 public class CustomerService implements ICustomerService {
-	ICustomerDAO customerDAO ;
-	IEmailSender emailSender ;
+
+	private ICustomerDAO customerDAO ;
+
+
+	private IEmailSender emailSender ;
 
 
 	@Override
